@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button @click="handle">click</button>
+        <span :title="city">city</span>
+    </div>
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                city: 'xian'
+            },
+            methods: {
+                handle: function () {
+                    alert('ok')
+                }
+            }
+        });
+    </script>
+</body>
+</html>
