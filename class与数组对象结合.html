@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .normal {
+            background: orangered;
+        }
+        .active {
+            background: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <p :class="[one, two]">ok</p>
+</div>
+<script>
+    //感觉更适合多个类连用
+    let vm = new Vue({
+        el: '#app',
+        data: {
+                one: 'normal',
+                two: 'active'
+        }
+    })
+</script>
+</body>
+</html>
