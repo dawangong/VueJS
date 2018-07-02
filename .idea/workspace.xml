@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4620b012-74ed-4263-bf51-10f465b9183c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bind:style.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class与数组对象结合.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/class内数据对象不必内联在模版中.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/动态切换class.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/if;else if;else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v-if;v-else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v-show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/唯一值key可以禁止复用.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bind:style.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bind:style.html">
+      <file leaf-file-name="v-show.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v-show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="216">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -51,6 +51,10 @@
         <option value="$PROJECT_DIR$/class与计算属性的结合.html" />
         <option value="$PROJECT_DIR$/class与数组对象结合.html" />
         <option value="$PROJECT_DIR$/bind:style.html" />
+        <option value="$PROJECT_DIR$/v-if;v-else.html" />
+        <option value="$PROJECT_DIR$/if;else if;else.html" />
+        <option value="$PROJECT_DIR$/唯一值key可以禁止复用.html" />
+        <option value="$PROJECT_DIR$/v-show.html" />
       </list>
     </option>
   </component>
@@ -132,12 +136,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530510934688</updated>
-      <workItem from="1530510936750" duration="6523000" />
+      <workItem from="1530510936750" duration="8526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6523000" />
+    <option name="totallyTimeSpent" value="8526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -151,7 +155,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32848486" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32848486" />
       <window_info anchor="bottom" id="RNConsole" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
@@ -213,13 +217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/动态切换class.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/计算属性.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -234,6 +231,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bind:style.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -244,10 +248,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bind:style.html">
+    <entry file="file://$PROJECT_DIR$/if;else if;else.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="435">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/动态切换class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/唯一值key可以禁止复用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v-if;v-else.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>

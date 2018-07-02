@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-if="isShow">you can see me !</div>
+    <div v-else-if="isOk">???</div>
+    <div v-else-if="isSure">??????</div>
+    <div v-else>are you see me ?</div>
+</div>
+<script>
+    let vm = new Vue({
+        el: '#app',
+        data: {
+            isShow: true,
+            isOk: false,
+            isSure: false
+        }
+    });
+</script>
+</body>
+</html>

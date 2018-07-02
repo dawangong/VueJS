@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!--如果想切换时不保留输入的信息只需要指定唯一的key-->
+        <template v-if="isOk">
+            <p>登陆方式1</p>
+            <input type="text" placeholder="保留信息切换">
+            <!--<input type="text" placeholder="不保留信息切换" key="one">-->
+            <button @click="handle">切换登陆方式</button>
+        </template>
+        <template v-else>
+            <p>登陆方式2</p>
+            <input type="text" placeholder="保留信息切换">
+            <!--<input type="text" placeholder="不保留信息切换" key="two">-->
+            <button @click="handle">切换登陆方式</button>
+        </template>
+    </div>
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                isOk: true
+            },
+            methods: {
+                handle: function () {
+                    this.isOk = !this.isOk;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
