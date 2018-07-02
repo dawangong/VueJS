@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <to-does v-for="item in type" v-bind:todo="item"></to-does>
+</div>
+<script>
+    Vue.component('to-does',{
+        props: ['todo'],
+        template: '<li>{{todo.res}}</li>'
+    });
+    let app = new  Vue({
+        el: "#app",
+        data : {
+            type: [
+                {id: '0',res: 'ni'},
+                {id: '1',res: 'wo'},
+                {id: '2',res: 'ta'}
+            ]
+        }
+    });
+</script>
+</body>
+</html>
