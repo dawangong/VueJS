@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <li v-for="item in evenNumbers">{{item}}</li>
+        <li v-for="item in even(numbers)">{{item}}</li>
+    </div>
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                numbers: [ 1, 2, 3, 4, 5 ]
+            },
+            computed: {
+                evenNumbers: function () {
+                    return this.numbers.filter(function (number) {
+                        return number % 2 === 0
+                    })
+                }
+            },
+            methods: {
+                even: function (numbers) {
+                    return numbers.filter(function (number) {
+                        return number % 2 === 0
+                    })
+                }}
+        });
+    </script>
+</body>
+</html>
