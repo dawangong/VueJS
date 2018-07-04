@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!--按键修饰符-->
+        <button @keyup.enter>button</button>
+        <button @keyup.tab>button</button>
+        <button @keyup.delete>button</button>
+        <button @keyup.esc>button</button>
+        <button @keyup.space>button</button>
+        <button @keyup.up>button</button>
+        <button @keyup.down>button</button>
+        <button @keyup.left>button</button>
+        <button @keyup.right>button</button>
+        <!--自定义按键修饰符：Vue.config.keyCodes.f1 = 112-->
+        <!--鼠标修饰符-->
+        <!--.left .right .middle-->
+    </div>
+    <script>
+        let vm = new Vue({
+            el: '#app'
+        });
+    </script>
+</body>
+</html>

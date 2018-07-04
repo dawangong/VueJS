@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<!-- 在“change”时而非“input”时更新 -->
+<input v-model.lazy="msg" >
+<!--转换输入的为number-->
+<input v-model.number="age" type="number">
+<!--如果要自动过滤用户输入的首尾空白字符，可以给 v-model 添加 trim 修饰符：-->
+<input v-model.trim="msg">
+</body>
+</html>
