@@ -14,7 +14,7 @@
         <span v-for="i in mock">
             {{i}}
         </span>
-        <button v-on:click="handle">点击</button>
+        <button v-on:click="handle">点击 | {{message}}</button>
     </div>
     <script>
         let app = new Vue({
@@ -31,7 +31,12 @@
             },
             methods: {
                 handle: function () {
-                    alert('ok')
+                    this.message = 'hi';
+                }
+            },
+            watch: {
+                message: function () {
+                    alert(1);
                 }
             }
         })
