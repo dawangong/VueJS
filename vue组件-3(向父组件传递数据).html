@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <!--通过事件传递-->
+    <!--待续。。。-->
+    <div id="app">
+        <div>
+            <cpt v-for="item in data" :data="item"></cpt>
+        </div>
+    </div>
+    <script>
+        Vue.component('cpt', {
+            props: ['data'],
+            template:
+            `<div class="cpt">
+            <h3>{{data.h}}</h3>
+                <!--<button @click="$emit('handle')">放大字体</button>-->
+                <p>{{data.p}}</p>
+            </div>`
+        });
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                data: [
+                    {h: '组件1', p: '我是组件1'},
+                    {h: '组件2', p: '我是组件2'},
+                    {h: '组件3', p: '我是组件3'},
+                ],
+                size: 14
+            }
+        });
+    </script>
+</body>
+</html>

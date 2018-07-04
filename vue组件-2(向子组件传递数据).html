@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <!--通过props属性配置数据的传递-->
+    <!--组件只能拥有一个根元素-->
+    <div id="app">
+        <cpt v-for="item in data" :data="item"></cpt>
+    </div>
+    <script>
+        Vue.component('cpt', {
+            props: ['data'],
+            template:
+            '<div class="cpt">' +
+            '<h3>{{data.h}}</h3>' +
+                '<p>{{data.p}}</p>'+
+            '</div>'
+        });
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                data: [
+                    {h: '组件1', p: '我是组件1'},
+                    {h: '组件2', p: '我是组件2'},
+                    {h: '组件3', p: '我是组件3'},
+                ]
+            }
+        });
+    </script>
+</body>
+</html>
