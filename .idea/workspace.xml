@@ -79,8 +79,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/vue-cli/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/vue-cli/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
@@ -91,7 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,10 +103,16 @@
               <item name="VueJS" type="b2602c69:ProjectViewProjectNode" />
               <item name="VueJS" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="VueJS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VueJS" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-cli" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,6 +126,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -155,11 +166,13 @@
       <workItem from="1530876676724" duration="143000" />
       <workItem from="1531229428705" duration="122000" />
       <workItem from="1532505664443" duration="1209000" />
+      <workItem from="1532859056418" duration="31000" />
+      <workItem from="1532859307113" duration="509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26137000" />
+    <option name="totallyTimeSpent" value="26677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -172,7 +185,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32848486" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32848486" />
       <window_info anchor="bottom" id="RNConsole" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -406,10 +419,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/路由.html">
+    <entry file="file://$PROJECT_DIR$/路由.html" />
+    <entry file="file://$PROJECT_DIR$/vue-cli/.postcssrc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="216">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-cli/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
