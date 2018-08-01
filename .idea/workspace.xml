@@ -1,46 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4620b012-74ed-4263-bf51-10f465b9183c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/.postcssrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/build/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/build/check-versions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/build/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/build/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/build/vue-loader.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/build/webpack.base.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/build/webpack.dev.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/build/webpack.prod.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/config/dev.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/config/prod.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/config/test.env.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/static/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/test/e2e/custom-assertions/elementCount.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/test/e2e/nightwatch.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/test/e2e/runner.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/test/e2e/specs/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/test/unit/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/test/unit/jest.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/test/unit/setup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/test/unit/specs/HelloWorld.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-cli/yarn.lock" beforeDir="false" />
-    </list>
+    <list default="true" id="4620b012-74ed-4263-bf51-10f465b9183c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -131,7 +92,7 @@
       <path value="$PROJECT_DIR$/vue-project-template-demo/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -209,16 +170,17 @@
       <workItem from="1532859307113" duration="1343000" />
       <workItem from="1533030418064" duration="36000" />
       <workItem from="1533102596437" duration="652000" />
+      <workItem from="1533112353184" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28199000" />
+    <option name="totallyTimeSpent" value="28239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20014094" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20014094" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -226,7 +188,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32848486" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31030303" />
       <window_info anchor="bottom" id="RNConsole" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -242,21 +204,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20014094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="RNConsole" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32848486" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -461,44 +423,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/路由.html" />
-    <entry file="file://$PROJECT_DIR$/vue-cli/.postcssrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-cli/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-cli/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-cli/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-cli/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-cli/.eslintignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-cli/.postcssrc.js" />
+    <entry file="file://$PROJECT_DIR$/vue-cli/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/vue-cli/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/vue-cli/.eslintrc.js" />
+    <entry file="file://$PROJECT_DIR$/vue-cli/package.json" />
+    <entry file="file://$PROJECT_DIR$/vue-cli/.eslintignore" />
     <entry file="file://$PROJECT_DIR$/vue-project-template-demo/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
