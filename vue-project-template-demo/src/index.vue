@@ -19,23 +19,23 @@
     <!--</header>-->
     <el-container>
       <el-header>
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" background-color="#545c64"
+        <el-menu router :default-active="$route.path" class="el-menu-demo" mode="horizontal" background-color="#87CEFA"
                  text-color="#fff" active-text-color="#ffd04b">
           <h1 class="top-bar-heading">运营管理系统 - DEMO</h1>
-          <el-menu-item index="1">处理中心</el-menu-item>
-          <el-menu-item index="2">我的工作台</el-menu-item>
-          <el-menu-item index="3">消息中心</el-menu-item>
-          <el-menu-item index="4">订单管理</el-menu-item>
+          <el-menu-item index="/">处理中心</el-menu-item>
+          <el-menu-item index="/one">我的工作台</el-menu-item>
+          <el-menu-item index="/two">消息中心</el-menu-item>
+          <el-menu-item index="/three">订单管理</el-menu-item>
         </el-menu>
       </el-header>
       <el-container>
         <el-aside width="250px">
           <el-menu
             default-active="2"
-            class="el-menu-vertical-demo"
-            background-color="#545c64"
-            text-color="#fff"
-            active-text-color="#ffd04b">
+            class="el-menu-vertical"
+            background-color="white"
+            text-color="black"
+            active-text-color="#87CEFA">
             <el-submenu index="1">
               <template slot="title">
                 <i class="el-icon-location"></i>
@@ -118,5 +118,8 @@
     padding-right: 33px;
     font-weight: normal;
     line-height: 60px;
+  }
+  .el-menu-vertical :hover {
+    background: #EBEEF5 !important;
   }
 </style>
