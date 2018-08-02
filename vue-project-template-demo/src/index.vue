@@ -84,7 +84,7 @@
     }
   }
 </script>
-<style scoped>
+<style>
   #app {
     position: relative;
   }
