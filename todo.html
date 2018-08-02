@@ -13,23 +13,28 @@
             <!--<li v-for="(item, index) in list" :key="index">{{item}}</li>-->
         <!--</ul>-->
         <ul>
-            <to-do v-for="(item, index) in list" :content="item" :index="index" @delete="handleDelete()"></to-do>
+            <to-do v-for="(item, index) in list" :content="item" :index="index" @delete="handleDelete()" :key="index"></to-do>
         </ul>
     </div>
     <script>
-        Vue.component('to-do', {
+        // Vue.component('to-do', {
+        //     template: '<li @click="deleteItem">{{content}}</li>',
+        //     props: ['content', 'index'],
+        //     methods: {
+        //         deleteItem: function () {
+        //             this.$emit('delete', this.index);
+        //         }
+        //     }
+        // });
+        let toDo = {
             template: '<li @click="deleteItem">{{content}}</li>',
-            props: ['content', 'index'],
-            methods: {
-                deleteItem: function () {
-                    this.$emit('delete', this.index);
+                props: ['content', 'index'],
+                methods: {
+                    deleteItem: function () {
+                        this.$emit('delete', this.index);
+                    }
                 }
-            }
-        });
-        // let toDo = {
-        //     template: '<li>{{content}}</li>',
-        //     props: ['content']
-        // };
+        };
         new Vue({
             el: '#app',
             data: {
@@ -45,10 +50,10 @@
                     this.list.splice(index, 1);
                 }
             }
-            // ,
-            // components: {
-            //     'to-do': toDo
-            // }
+            ,
+            components: {
+                'to-do': toDo
+            }
         })
     </script>
 </body>

@@ -24,6 +24,6 @@ new Vue({
   el: '#app',
   router,
   components: { Index },
-  template: '<App/>',
+  template: '<Index/>',
   render: h => h(Index)
 });

@@ -1,22 +1,5 @@
 <template>
   <div id="app">
-    <!--<img src="./assets/images/logo.png">-->
-    <!--<header>-->
-    <!--<ul class="header-nav">-->
-    <!--<li>-->
-    <!--<router-link to="/">主视图</router-link>-->
-    <!--</li>-->
-    <!--<li>-->
-    <!--<router-link to="/one">分区一</router-link>-->
-    <!--</li>-->
-    <!--<li>-->
-    <!--<router-link to="/two">分区一</router-link>-->
-    <!--</li>-->
-    <!--<li>-->
-    <!--<router-link to="/three">分区三</router-link>-->
-    <!--</li>-->
-    <!--</ul>-->
-    <!--</header>-->
     <el-container>
       <el-header>
         <el-menu router :default-active="$route.path" class="el-menu-demo" mode="horizontal" background-color="#87CEFA"
