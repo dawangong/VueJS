@@ -61,28 +61,27 @@
 </template>
 
 <script>
-  // import Vue from 'vue';
-  // import Component from 'vue-class-component';
+  import Vue from 'vue';
+  import Component from 'vue-class-component';
 
-  // @Component({
-  //   name: 'index',
-  //   data() {
-  //     return {
-  //       activeIndex: '1'
-  //     }
-  //   }
-  // })
-  // export default class index extends Vue {
-  //
-  // };
-  export default {
-    name: 'index',
+  @Component({
+    name: 'index'
+  })
+  export default class index extends Vue {
     data () {
       return {
         activeIndex: '1'
       }
     }
-  }
+  };
+  // export default {
+  //   name: 'index',
+  //   data () {
+  //     return {
+  //       activeIndex: '1'
+  //     }
+  //   }
+  // }
 </script>
 <style>
   #app {
