@@ -11,15 +11,17 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 const cleanWebpackPlugin = require('clean-webpack-plugin');
 // mock配置开始
+const mock = require('../mock');
 const jsonServer = require('json-mock-kuitos');
 const app = jsonServer.create();
 const bodyParser = require('body-parser');
-// mock配置结束
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(function (res, req, next) {
-  require('../mock')(res, req, next);
+  mock(res, req, next);
 });
+// mock配置结束
+
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
