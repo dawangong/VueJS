@@ -7,7 +7,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import router from './router';
 import './common/styles/reset.less';
 import VueResource from 'vue-resource';
-const DEFAULT_API_PREFIX = '';
+const DEFAULT_API_PREFIX = '/api';
 // 拦截增加请求默认前缀
 Vue.use(VueResource);
 Vue.http.interceptors.push((req, next) => {

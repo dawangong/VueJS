@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4620b012-74ed-4263-bf51-10f465b9183c" name="Default" comment="" />
+    <list default="true" id="4620b012-74ed-4263-bf51-10f465b9183c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-project-template-demo/src/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project-template-demo/src/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-project-template-demo/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-project-template-demo/src/main.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -105,6 +110,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,7 +122,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,27 +183,28 @@
       <workItem from="1533113321673" duration="2469000" />
       <workItem from="1533118692252" duration="15000" />
       <workItem from="1533198045307" duration="2651000" />
+      <workItem from="1533202234454" duration="175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33374000" />
+    <option name="totallyTimeSpent" value="33549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20014094" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20014094" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31030303" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31030303" />
       <window_info anchor="bottom" id="RNConsole" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -211,21 +217,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20014094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="RNConsole" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32848486" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -474,8 +480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="15" column="101" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="101" />
+        <state relative-caret-position="173">
+          <caret line="15" column="126" lean-forward="true" selection-start-line="15" selection-start-column="126" selection-end-line="15" selection-end-column="126" />
         </state>
       </provider>
     </entry>
