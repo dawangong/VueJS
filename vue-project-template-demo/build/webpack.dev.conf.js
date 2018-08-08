@@ -12,14 +12,7 @@ const portfinder = require('portfinder')
 const cleanWebpackPlugin = require('clean-webpack-plugin');
 // mock配置开始
 const mock = require('../mock');
-const jsonServer = require('json-mock-kuitos');
-const app = jsonServer.create();
 const bodyParser = require('body-parser');
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(function (res, req, next) {
-  mock(res, req, next);
-});
 // mock配置结束
 
 const HOST = process.env.HOST
@@ -54,6 +47,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
+    },
+    setup(app){
+      app.use(bodyParser.json());
+      app.use(bodyParser.urlencoded({ extended: false }));
+      app.use(function (res, req, next) {
+        mock(res, req, next);
+      });
     }
   },
   plugins: [
