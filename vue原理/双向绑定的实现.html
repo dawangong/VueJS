@@ -28,7 +28,7 @@
                 return val
             },
             set: function (newVal) {
-                if (newVal === val) return
+                if (newVal === val) return;
                 val = newVal;
                 // 作为发布者发出通知
                 dep.notify();
@@ -113,12 +113,11 @@
                 sub.update();
             });
         }
-    }
+    };
     function Vue (options) {
-        this.data = options.data;
-        var data = this.data;
-        observe(data, this);
         var id = options.el;
+        var data = options.data;
+        observe(data, this);
         var dom = nodeToFragment(document.getElementById(id), this);
         // 编译完成后，将 dom 返回到 app 中
         document.getElementById(id).appendChild(dom);
@@ -128,7 +127,7 @@
         data: {
             text: 'hello world'
         }
-    })
+    });
 </script>
 </body>
 </html>
