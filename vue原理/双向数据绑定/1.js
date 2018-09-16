@@ -1,9 +1,9 @@
 class Vue {
-    // 对象的属性深度监控
     constructor(obj) {
         this.data = obj.data;
         this.observer(this.data);
     }
+    //  对象的属性深度监控
     observer(obj) {
       if(typeof obj === 'object' && obj !== null) {
           for (let prop in obj) {

@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="2.js"></script>
+    <script src="3.js"></script>
 </head>
 <body>
+<div id="app">
+    <input type="text" v-model="test">
+    <p v-model="test"></p>
+    {{ test }}
+</div>
 <script>
     let temp = new Vue({
+        el: 'app',
         data: {
             a: '1',
             b: {
                 c: '2'
-            }
+            },
+            test: '2333'
         }
     });
 </script>
