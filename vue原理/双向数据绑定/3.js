@@ -20,10 +20,15 @@ class Vue {
         this.observer(val);
         Object.defineProperty(obj, prop, {
             get: function () {
+                console.log('小心倍增');
                 Management.target && mg.add(Management.target);
                 return val
             },
             set: function (newVal) {
+                console.log(newVal, val);
+                if (newVal === val) return;
+                //  被触发后改变val 后续触发get获取val赋值给视图层节点值刷新视图
+                val = newVal;
                 console.log('变化了');
                 mg.notify();
             }
@@ -53,7 +58,6 @@ class Vue {
                         this.data[this.name] = e.target.value;
                     });
                     node.value = this.data[this.name]; //   将 data 的值赋给该 node
-                    // node.removeAttribute('v-model');
                 }
             });
             new Watcher(this, node, this.name, 'input');
@@ -91,14 +95,16 @@ class Watcher {
         this.name = name;
         this.nodeType = nodeType;
         this.update();
+        //  防止this.subs数量意外增加 倍数调用update方法 造成内存溢出
+        Management.target = null;
     }
     update() {
         this.get();
         //  更新视图
-        if (this.nodeType == 'text') {
+        if (this.nodeType === 'text') {
             this.node.nodeValue = this.value;
         }
-        if (this.nodeType == 'input') {
+        if (this.nodeType === 'input') {
             this.node.value = this.value;
         }
     }

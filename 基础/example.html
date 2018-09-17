@@ -38,8 +38,7 @@
     function nodeToFragment (node, vm) {
         var flag = document.createDocumentFragment();
         var child;
-        // 许多同学反应看不懂这一段，这里有必要解释一下
-        // 首先，所有表达式必然会返回一个值，赋值表达式亦不例外
+        // 所有表达式必然会返回一个值，赋值表达式亦不例外
         // 理解了上面这一点，就能理解 while (child = node.firstChild) 这种用法
         // 其次，appendChild 方法有个隐蔽的地方，就是调用以后 child 会从原来 DOM 中移除
         // 所以，第二次循环时，node.firstChild 已经不再是之前的第一个子元素了

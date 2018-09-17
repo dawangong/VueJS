@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4620b012-74ed-4263-bf51-10f465b9183c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/vue原理/双向数据绑定/3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue原理/双向数据绑定/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue原理/双向数据绑定/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue原理/双向数据绑定/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue原理/双向数据绑定/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue原理/双向数据绑定/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue原理/双向数据绑定/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue原理/双向数据绑定/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue原理/双向数据绑定/3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue原理/双向数据绑定/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/基础/example.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue原理/双向数据绑定/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue原理/双向数据绑定/test.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,30 +18,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="双向绑定的实现.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/双向绑定的实现.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="3.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="49" column="46" lean-forward="true" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+            <state relative-caret-position="-62">
+              <caret line="84" column="22" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/demo.html">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="311">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -70,8 +60,9 @@
       <find>this.data</find>
       <find>observe</find>
       <find>name</find>
-      <find>update</find>
       <find>log</find>
+      <find>update</find>
+      <find>get</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,10 +112,12 @@
         <option value="$PROJECT_DIR$/vue原理/demo.html" />
         <option value="$PROJECT_DIR$/vue原理/1.js" />
         <option value="$PROJECT_DIR$/vue原理/双向数据绑定/2.js" />
-        <option value="$PROJECT_DIR$/vue原理/双向数据绑定/1.js" />
         <option value="$PROJECT_DIR$/vue原理/双向数据绑定/双向绑定的实现.html" />
         <option value="$PROJECT_DIR$/vue原理/双向数据绑定/demo.html" />
+        <option value="$PROJECT_DIR$/基础/example.html" />
+        <option value="$PROJECT_DIR$/vue原理/双向数据绑定/test.html" />
         <option value="$PROJECT_DIR$/vue原理/双向数据绑定/3.js" />
+        <option value="$PROJECT_DIR$/vue原理/双向数据绑定/1.js" />
       </list>
     </option>
   </component>
@@ -153,7 +146,7 @@
       <path value="$PROJECT_DIR$/vue-project-template-demo/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="39" />
     <option name="y" value="23" />
     <option name="width" value="1334" />
@@ -164,7 +157,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,10 +175,16 @@
               <item name="vue原理" type="462c0819:PsiDirectoryNode" />
               <item name="双向数据绑定" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="VueJS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VueJS" type="462c0819:PsiDirectoryNode" />
+              <item name="基础" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,13 +202,14 @@
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/基础" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/vue原理/基础" />
       <recent name="$PROJECT_DIR$/vue原理/双向数据绑定" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -225,10 +224,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.1.js">
+    <configuration name="1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="1.js" working-dir="$PROJECT_DIR$/vue原理/双向数据绑定" />
     <configuration name="Observer.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/vue原理/Observer.js" working-dir="$PROJECT_DIR$/vue原理" />
+    <list>
+      <item itemvalue="Node.js.Observer.js" />
+      <item itemvalue="Node.js.1.js" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.1.js" />
         <item itemvalue="Node.js.Observer.js" />
       </list>
     </recent_temporary>
@@ -269,15 +274,16 @@
       <workItem from="1536657335240" duration="1916000" />
       <workItem from="1536715038545" duration="36000" />
       <workItem from="1536801802952" duration="6487000" />
-      <workItem from="1537093891684" duration="9085000" />
+      <workItem from="1537093891684" duration="9331000" />
+      <workItem from="1537187704939" duration="3569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53394000" />
+    <option name="totallyTimeSpent" value="57209000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18463707" />
@@ -304,21 +310,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20014094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="RNConsole" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32848486" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -556,20 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -577,24 +569,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/demo.html">
+    <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="-2">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/双向绑定的实现.html">
+    <entry file="file://$PROJECT_DIR$/基础/example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="26" />
+        <state relative-caret-position="192">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue原理/双向数据绑定/3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="49" column="46" lean-forward="true" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+        <state relative-caret-position="-62">
+          <caret line="84" column="22" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="22" />
         </state>
       </provider>
     </entry>
