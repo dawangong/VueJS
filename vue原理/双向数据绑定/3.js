@@ -25,7 +25,6 @@ class Vue {
                 return val
             },
             set: function (newVal) {
-                console.log(newVal, val);
                 if (newVal === val) return;
                 //  被触发后改变val 后续触发get获取val赋值给视图层节点值刷新视图
                 val = newVal;
@@ -34,33 +33,49 @@ class Vue {
             }
         });
     }
-    nodeToFragment(node, vm) {
+    nodeToFragment(node) {
         //  创建一个新的空白的文档片段
-        let flag = document.createDocumentFragment(),
-            child;
-        while (child = node.firstChild) {
-            this.compile(child, vm);
-            flag.appendChild(child); // 将子节点劫持到文档片段中
+        let flag = document.createDocumentFragment();
+        while (node.firstChild) {
+            this.compile(node.firstChild);
+            flag.appendChild(node.firstChild); // 将子节点劫持到文档片段中
         }
         return flag;
     }
     compile(node) {
         //  如果是元素节点
         if(node.nodeType === 1) {
-            //  获取属性的集合
             let attr = [...node.attributes];
-            attr.forEach(att => {
-                if(att.nodeName === 'v-model') {
-                    //  获取 v-model 绑定的属性名
-                    this.name = att.nodeValue;
-                    node.addEventListener('input', e => {
-                        //  给相应的 data 属性赋值，进而触发该属性的 set 方法
-                        this.data[this.name] = e.target.value;
+            if(node.nodeName === 'INPUT') {
+                //  获取属性的集合
+                attr.forEach(att => {
+                    if(att.nodeName === 'v-model') {
+                        //  获取 v-model 绑定的属性名
+                        this.name = att.nodeValue;
+                        node.addEventListener('input', e => {
+                            //  给相应的 data 属性赋值，进而触发该属性的 set 方法
+                            this.data[this.name] = e.target.value;
+                        });
+                        // node.value = this.data[this.name];
+                    }
+                });
+                new Watcher(this, node, this.name, 'input');
+            } else {
+                let reg = /\{\{(.*)\}\}/;
+                if(reg.test(node.innerText)) {
+                    let name = RegExp.$1; //  获取匹配到的字符串
+                    name = name.trim();
+                    new Watcher(this, node, name, 'element');
+                } else{
+                    attr.forEach(att => {
+                        if(att.nodeName === 'v-model') {
+                            //  获取 v-model 绑定的属性名
+                            this.name = att.nodeValue;
+                        }
                     });
-                    node.value = this.data[this.name]; //   将 data 的值赋给该 node
+                    new Watcher(this, node, this.name, 'element');
                 }
-            });
-            new Watcher(this, node, this.name, 'input');
+            }
         }
         if (node.nodeType === 3) {
             let reg = /\{\{(.*)\}\}/;
@@ -106,6 +121,9 @@ class Watcher {
         }
         if (this.nodeType === 'input') {
             this.node.value = this.value;
+        }
+        if(this.nodeType === 'element') {
+            this.node.innerText = this.value;
         }
     }
     // 获取 data 中的属性值
