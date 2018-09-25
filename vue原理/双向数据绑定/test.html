@@ -7,11 +7,26 @@
 </head>
 <body>
 <div id="app">
+    <!--sadlaj-->
     <input type="text" v-model="test">
     {{ test }}
     <p v-model="test"></p>
     <p>{{ test }}</p>
+    <div>
+        <div>{{ test }}</div>
+    </div>
 </div>
+
+<!--<div id="xxx">-->
+    <!--&lt;!&ndash;sadlaj&ndash;&gt;-->
+    <!--<input type="text" v-model="test">-->
+    <!--{{ test }}-->
+    <!--<p v-model="test"></p>-->
+    <!--<p>{{ test }}</p>-->
+    <!--<div>-->
+        <!--<p v-model="test"></p>-->
+    <!--</div>-->
+<!--</div>-->
 <script>
     let temp = new Vue({
         el: 'app',
@@ -23,6 +38,16 @@
             test: '2333'
         }
     });
+    // let temp2 = new Vue({
+    //     el: 'xxx',
+    //     data: {
+    //         a: '1',
+    //         b: {
+    //             c: '2'
+    //         },
+    //         test: '21321'
+    //     }
+    // });
 </script>
 </body>
 </html>

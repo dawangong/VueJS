@@ -7,21 +7,25 @@ class Vue {
         //  编译完成后，将 dom 返回到 app 中
         document.getElementById(id).appendChild(dom);
     }
+
     //  对象的属性深度监控
     observer(obj) {
-        if(typeof obj === 'object' && obj !== null) {
+        if (typeof obj === 'object' && obj !== null) {
             for (let prop in obj) {
                 this.defineHandle(obj, prop, obj[prop]);
             }
         }
     }
+
     defineHandle(obj, prop, val) {
         let mg = new Management();
         this.observer(val);
         Object.defineProperty(obj, prop, {
             get: function () {
                 console.log('小心倍增');
-                Management.target && mg.add(Management.target);
+                // 数组判断已有不添加
+                const res = !!mg.subs.find(value => value === Management.target);
+                !res && mg.add(Management.target);
                 return val
             },
             set: function (newVal) {
@@ -33,6 +37,7 @@ class Vue {
             }
         });
     }
+
     nodeToFragment(node) {
         //  创建一个新的空白的文档片段
         let flag = document.createDocumentFragment();
@@ -42,33 +47,34 @@ class Vue {
         }
         return flag;
     }
+
     compile(node) {
         //  如果是元素节点
-        if(node.nodeType === 1) {
+        if (node.nodeType === 1) {
             let attr = [...node.attributes];
-            if(node.nodeName === 'INPUT') {
+            if (node.nodeName === 'INPUT') {
                 //  获取属性的集合
                 attr.forEach(att => {
-                    if(att.nodeName === 'v-model') {
+                    if (att.nodeName === 'v-model') {
                         //  获取 v-model 绑定的属性名
                         this.name = att.nodeValue;
                         node.addEventListener('input', e => {
                             //  给相应的 data 属性赋值，进而触发该属性的 set 方法
                             this.data[this.name] = e.target.value;
                         });
-                        // node.value = this.data[this.name];
                     }
                 });
+                // 只用传两个参数
                 new Watcher(this, node, this.name, 'input');
             } else {
                 let reg = /\{\{(.*)\}\}/;
-                if(reg.test(node.innerText)) {
+                if (reg.test(node.innerText)) {
                     let name = RegExp.$1; //  获取匹配到的字符串
                     name = name.trim();
                     new Watcher(this, node, name, 'element');
-                } else{
+                } else {
                     attr.forEach(att => {
-                        if(att.nodeName === 'v-model') {
+                        if (att.nodeName === 'v-model') {
                             //  获取 v-model 绑定的属性名
                             this.name = att.nodeValue;
                         }
@@ -87,20 +93,24 @@ class Vue {
         }
     }
 }
+
 //  管理订阅
 class Management {
     constructor() {
         this.subs = [];
     }
+
     add(sub) {
         this.subs.push(sub)
     }
+
     notify() {
         this.subs.forEach(sub => {
             sub.update();
         });
     }
 }
+
 //  订阅者
 class Watcher {
     constructor(vm, node, name, nodeType) {
@@ -111,8 +121,9 @@ class Watcher {
         this.nodeType = nodeType;
         this.update();
         //  防止this.subs数量意外增加 倍数调用update方法 造成内存溢出
-        Management.target = null;
+        // Management.target = null;
     }
+
     update() {
         this.get();
         //  更新视图
@@ -122,12 +133,13 @@ class Watcher {
         if (this.nodeType === 'input') {
             this.node.value = this.value;
         }
-        if(this.nodeType === 'element') {
+        if (this.nodeType === 'element') {
             this.node.innerText = this.value;
         }
     }
+
     // 获取 data 中的属性值
-    get () {
+    get() {
         this.value = this.vm.data[this.name]; // 触发相应属性的 get
     }
 }
